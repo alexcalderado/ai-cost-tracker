@@ -38,6 +38,23 @@ One dashboard to see all your AI API costs. Connect your accounts, see your spen
 
 ## API Integrations
 
+### Providers to Support (MVP)
+1. **Anthropic** — API usage + Pro membership ($20/mo)
+2. **OpenAI** — API usage + Plus/Pro subscriptions
+3. **Google (Gemini)** — API usage
+4. **Minimax** — API usage
+5. **Mistral** — API usage
+6. **Groq** — API usage
+7. **Together AI** — API usage
+8. **Replicate** — API usage
+
+### Cost Types
+- **API Usage** — Per-token/per-request costs (pulled from provider APIs)
+- **Membership Fees** — Fixed monthly subscriptions (user-entered or auto-detected)
+  - Anthropic Pro: $20/mo
+  - OpenAI Plus: $20/mo
+  - OpenAI Pro: $200/mo
+
 ### Anthropic Usage API
 - Endpoint: `https://api.anthropic.com/v1/usage`
 - Auth: API key in header
@@ -99,6 +116,11 @@ create table usage_cache (
 - Time to value: < 2 minutes from signup to seeing costs
 - Activation: User adds at least 1 API key
 - Retention: User returns within 7 days
+
+## Deployment
+- **Domain:** osolobo.com/cost-guard (or subdomain)
+- **RULE:** Only deploy to osolobo.com — NO vercel.app subdomains
+- **Hosting:** Vercel (connected to osolobo.com)
 
 ## Timeline
 - Day 1: Project setup, auth, landing page
