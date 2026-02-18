@@ -27,7 +27,10 @@ export default function Home() {
           See My Costs Free →
         </Link>
         
-        <p className="text-gray-400 mt-4 text-sm">No signup required. Keys aren't stored.</p>
+        <p className="text-gray-400 mt-4 text-sm">
+          No signup required. Keys stay in your browser. 
+          <a href="https://github.com/alexcalderado/ai-cost-tracker" className="text-emerald-400 hover:underline ml-1">100% open source →</a>
+        </p>
         
         {/* Provider logos */}
         <div className="mt-12 flex flex-wrap justify-center gap-4">
@@ -135,10 +138,34 @@ export default function Home() {
         </Link>
       </div>
       
+      {/* Trust Section */}
+      <div className="max-w-4xl mx-auto px-4 py-12">
+        <div className="bg-gray-800/50 rounded-xl p-8 border border-gray-700">
+          <h2 className="text-2xl font-bold text-white mb-4 text-center">🔒 Built for Trust</h2>
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div>
+              <p className="text-emerald-400 font-semibold mb-1">Open Source</p>
+              <p className="text-gray-400 text-sm">Every line of code is public. Verify what happens with your data.</p>
+            </div>
+            <div>
+              <p className="text-emerald-400 font-semibold mb-1">No Backend</p>
+              <p className="text-gray-400 text-sm">Keys stay in your browser. Manual entry works without any keys.</p>
+            </div>
+            <div>
+              <p className="text-emerald-400 font-semibold mb-1">Self-Host Option</p>
+              <p className="text-gray-400 text-sm">Clone the repo, deploy to your own Vercel. Full control.</p>
+            </div>
+          </div>
+          <div className="text-center mt-6">
+            <a href="https://github.com/alexcalderado/ai-cost-tracker" className="text-emerald-400 hover:underline">View source on GitHub →</a>
+          </div>
+        </div>
+      </div>
+
       {/* Footer */}
       <footer className="border-t border-gray-700 py-8 mt-16">
         <div className="max-w-4xl mx-auto px-4 text-center text-gray-400">
-          <p>Built by <a href="https://x.com/AlexCalderAI" className="text-emerald-400 hover:underline">@AlexCalderAI</a></p>
+          <p>Built by <a href="https://x.com/AlexCalderAI" className="text-emerald-400 hover:underline">@AlexCalderAI</a> · <a href="https://github.com/alexcalderado/ai-cost-tracker" className="text-emerald-400 hover:underline">GitHub</a></p>
         </div>
       </footer>
     </main>
